@@ -1,0 +1,208 @@
+/* Basic body styling */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: Arial, sans-serif; /* Set font family */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Set light gray background color */
+}
+
+/* Title styling */
+.title {
+    text-align: center; /* Center align the title */
+    margin-top: 50px; /* Add margin from the top */
+}
+
+/* Questions container */
+.Questions {
+    display: none; /* Initially hide the questions container */
+    margin: 20px auto; /* Center the container and add margin */
+    max-width: 600px; /* Limit the width of the container */
+    padding: 20px; /* Add padding inside the container */
+    background-color: white; /* Set the background to white */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Add subtle shadow effect */
+}
+
+/* Individual question list styling */
+.Questions ol {
+    padding-left: 20px; /* Add padding to the left of the ordered list */
+}
+
+.Questions ol li {
+    margin: 10px 0; /* Add space between list items */
+    padding: 10px; /* Add padding inside each list item */
+    background-color: #f0f0f0; /* Light gray background for the items */
+    border-radius: 8px; /* Rounded corners for list items */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color on hover */
+    display: block; /* Ensure each item is on its own line */
+    width: fit-content; /* Adjust width to fit the text content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Hover effect for quiz options */
+.Questions ol li:hover {
+    background-color: #d8e8ff; /* Light blue background on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhance shadow effect on hover */
+    border-color: #007bff; /* Change border color on hover */
+}
+
+/* Button styling */
+.butn {
+    text-align: center; /* Center-align the button */
+    margin-top: 20px; /* Add margin above the button */
+}
+
+.butn button {
+    padding: 10px 20px; /* Add padding inside the button */
+    font-size: 16px; /* Set font size */
+    background-color: #007bff; /* Set blue background color */
+    color: white; /* Set white text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.butn button:hover {
+    background-color: #0056b3; /* Darken the background color on hover */
+}
+
+/* Timer styling */
+.timer {
+    font-size: 18px; /* Set font size */
+    color: #555; /* Set text color */
+    text-align: center; /* Center the timer text */
+    position: absolute; /* Position the timer */
+    top: 20px; /* Move to the top */
+    right: 30px; /* Move to the right */
+    font-weight: bold; /* Make the timer text bold */
+    color: red; /* Set timer color to red */
+}
+
+/* Score container styling */
+.score {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Align children in column */
+    align-items: center; /* Center-align the items */
+    font-family: 'Arial', sans-serif; /* Set font family */
+    font-size: 18px; /* Set font size */
+    color: #333; /* Set dark gray text color */
+    margin: 20px auto; /* Center the score section */
+    padding: 20px; /* Add padding for spacing */
+    max-width: 600px; /* Limit width for neat layout */
+    box-shadow: none; /* Remove box shadow */
+    background-color: transparent; /* Remove background color */
+}
+
+/* Heading styling */
+.score h2 {
+    margin: 0 0 15px; /* Add space below the heading */
+    font-weight: bold; /* Make the heading bold */
+    font-size: 24px; /* Set larger font size */
+    color: #007bff; /* Set blue color for heading */
+}
+
+/* Styling for each answer option */
+.score p {
+    position: relative;
+    right: 102px;
+    margin: 10px 0; /* Add space between options */
+    font-size: 20px; /* Set larger text size */
+    color: #555; /* Slightly lighter gray text */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Make each answer take full width of the container */
+    text-decoration: underline dashed; /* Add a dashed underline */
+    text-decoration-color: #ccc; /* Set gray color for underline */
+    text-decoration-thickness: 2px; /* Set thickness of underline */
+    text-underline-offset: 5px; /* Space between text and underline */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for score options */
+.score p:hover {
+    color: #007bff; /* Change text color to blue on hover */
+    text-decoration-color: #007bff; /* Change underline color to blue */
+    text-decoration-style: solid; /* Change underline to solid on hover */
+    font-weight: bold; /* Make the text bold on hover */
+    letter-spacing: 1px; /* Slightly increase letter spacing */
+}
+
+/* Show and hide utility classes */
+.visible {
+    display: flex; /* Make element visible with flexbox */
+    position: relative; /* Set relative positioning */
+    left: -50px; /* Adjust position to the left */
+}
+
+.hide {
+    display: none; /* Hide the element */
+}
+
+.high2 {
+    display: none; /* Hide specific element */
+}
+
+.show {
+    display: flex; /* Make element visible using flexbox */
+}
+
+.see {
+    display: block; /* Make element visible as a block */
+}
+
+.watch {
+    display: flex; /* Use flexbox for element visibility */
+}
+
+/* Key container */
+.key {
+    text-align: center; /* Center the key container */
+    margin: -40px auto; /* Center-align with negative top margin */
+    padding: 20px; /* Add padding for spacing */
+    max-width: 600px; /* Set maximum width */
+    width: fit-content; /* Adjust width to fit the content */
+}
+
+/* Key heading styles */
+.key h2 {
+    color: #28a745; /* Set green color for key heading */
+    margin: 20px 0; /* Add space above and below heading */
+    font-size: 24px; /* Set font size */
+}
+
+/* Key list styling */
+.key ol {
+    padding-left: 20px; /* Add padding on the left for ordered list */
+    list-style-type: decimal; /* Set decimal numbers for the list */
+    margin: 0; /* Remove default margin */
+    position: relative; /* Set relative positioning */
+    right: 212px; /* Move list to the right */
+}
+
+/* Styling for key list items */
+.key ol li {
+    margin: 30px 0; /* Add space between list items */
+    font-size: 20px; /* Set larger font size */
+    color: #555; /* Set gray text color */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Make list item take full width of container */
+    text-decoration: underline dashed; /* Add a dashed underline */
+    text-decoration-color: #ccc; /* Set gray color for underline */
+    text-decoration-thickness: 2px; /* Set underline thickness */
+    text-underline-offset: 5px; /* Space between text and underline */
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+    position: relative; /* Set relative positioning */
+    left: 100px; /* Move list item to the left */
+}
+
+/* Hover effect for key list items */
+.key ol li:hover {
+    background-color: #e2f0e2; /* Light green background on hover */
+    color: #007bff; /* Change text color to blue on hover */
+    text-decoration-color: #007bff; /* Change underline color to blue */
+    text-decoration-style: solid; /* Change underline to solid on hover */
+    font-weight: bold; /* Make text bold on hover */
+    letter-spacing: 1px; /* Slightly increase letter spacing */
+}
